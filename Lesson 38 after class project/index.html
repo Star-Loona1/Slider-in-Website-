@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>Add More Sliders</h2>
+    <section class="american">
+        <img class="lets_slide" src="https://img.taste.com.au/FH2xb58L/taste/2010/01/choc-chip-cookies-image1-197537-1.jpg"
+            width="800px" height="500px">
+        
+        <img class="lets_slide" src="https://www.bettycrocker.co.uk/wp-content/uploads/2024/07/polar-bear-cake.png"
+            width="800px" height="500px">
+        
+        <img class="lets_slide"
+            src="https://www.warmoven.in/cdn/shop/files/duel-delight-chocolate_-cake.jpg?v=1749833568&width=1080" width="800px"
+            height="500px">
+
+        <img class="lets_slide" src="https://figarooliveoil.com/wp-content/uploads/2022/02/chicken-dum-biryani-2.png" width="800px" height="500px">
+
+        <img class="lets_slide" src="https://hips.hearstapps.com/hmg-prod/images/delish-202104-airfryerhotdogs-044-1619472270.jpg?crop=1xw:0.84375xh;0,0.119xh" width="800px" height="500px">
+
+        <img class="lets_slide" src="https://i.ytimg.com/vi/fX7D5F0bjX0/maxresdefault.jpg" width="800px" height="500px">
+
+        <img class="lets_slide" src="https://www.foodtech-jinyoung.com/cms/lib/images/news/homemade-ramyeon.jpg" width="800px" height="500px">
+    </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("lets_slide");
+            for(i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if(myIndex > x.length){myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+</html>
